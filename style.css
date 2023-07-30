@@ -8,17 +8,17 @@
 .h1-calc {
   text-align: center;
   color: tomato;
-  margin-top: 50px;
   user-select: none;
+  margin-top: 5px;
 }
 
 .calculator {
   background-color: #fff;
-  border: 3px solid burlywood;
+  border: 5px solid burlywood;
   border-radius: 8px;
   width: 300px;
-  margin: 24px auto 0;
-  padding: 12px;
+  margin: 14px auto;
+  padding: 8px;
 }
 
 .display {
@@ -29,12 +29,33 @@
   color: #fff;
   width: 256px;
   height: 66px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
   border-radius: 5px;
   padding: 10px;
 }
 
-.keypad-rows {
+.keypad {
+  user-select: none;
+  width: 226px;
+  margin: 0 auto;
+}
+
+.row {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.clm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: tomato;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
 }
