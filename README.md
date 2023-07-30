@@ -1,1 +1,1 @@
-### The Odin Foundation final project - Calculator
+# The Odin Foundation final project - Calculator
