@@ -29,7 +29,9 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
-  return a / b;
+  if (b === 0) {
+    return alert(`You cant't divide by 0`);
+  } else return a / b;
 }
 
 function operate(operatorChoose, numOne, numTwo) {
@@ -79,14 +81,18 @@ clear.addEventListener('click', () => {
   displayValue = 0;
   display.textContent = 0;
   operator = '';
+  firstOperand = '';
+  secondOperand = '';
 });
 
 equalBtn.addEventListener('click', () => {
-  secondOperand = displayValue;
-  displayValue = +operate(operator, firstOperand, secondOperand);
-  console.log('it res', displayValue);
-  display.textContent = displayValue;
-  if (display.textContent.length > 14) {
-    display.textContent = 'NaN';
-  }
+  if (firstOperand || secondOperand) {
+    secondOperand = displayValue;
+    displayValue = +operate(operator, firstOperand, secondOperand);
+    console.log('it res', displayValue);
+    display.textContent = displayValue;
+    if (display.textContent.length > 14) {
+      display.textContent = 'NaN';
+    }
+  } else return console.log('error');
 });
