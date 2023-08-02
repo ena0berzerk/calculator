@@ -5,40 +5,44 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  background-color: #181725;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
 .h1-calc {
   text-align: center;
-  color: tomato;
+  color: #00b0a4ff;
   user-select: none;
-  margin-top: 5px;
+  margin: 5px 0 24px;
 }
 
 .calculator {
-  background-color: #fff;
-  border: 5px solid burlywood;
-  border-radius: 8px;
-  width: 300px;
+  background-color: #353d4dff;
+  border-radius: 12px;
+  width: 240px;
   margin: 14px auto;
-  padding: 8px;
+  padding: 12px;
 }
 
 .display {
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: orange;
-  color: #fff;
-  width: 256px;
-  height: 66px;
-  margin: 0 auto 5px;
-  border-radius: 5px;
+  color: #00b0a4;
+  height: 80px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 2px solid #00b0a4ff;
   padding: 10px;
   font-size: 28px;
 }
 
 .keypad {
   user-select: none;
-  width: 226px;
-  margin: 0 auto;
 }
 
 .row {
@@ -46,22 +50,61 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
 }
 
 .keys-btns {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 42px;
-  height: 42px;
-  background-color: tomato;
-  border: 1px solid black;
-  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
+  border: none;
 }
 
-.keys-btns:hover {
-  opacity: 0.9;
+.operator {
+  color: #00b0a4ff;
+  background-color: #21424c;
+  transition: 300ms background-color;
+}
+
+.operator:hover,
+.delete:hover {
+  background-color: #00b0a4ff;
+  color: #f8fdfdff;
+}
+
+.delete {
+  color: #00b0a4ff;
+  transition: 300ms background-color;
+}
+
+.number {
+  color: #f8fdfdff;
+  transition: 300ms color;
+}
+
+.number:hover {
+  color: #00b0a4ff;
+}
+
+.row-width {
+  display: flex;
+}
+.row-width > .operator {
+  flex-basis: 150px;
+}
+
+.deaf {
+  cursor: default;
+}
+
+.deaf:hover {
+  background-color: inherit;
+}
+
+#equal {
+  border-bottom-right-radius: 12px;
 }
