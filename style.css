@@ -32,6 +32,7 @@
   margin: 0 auto 5px;
   border-radius: 5px;
   padding: 10px;
+  font-size: 28px;
 }
 
 .keypad {
@@ -48,14 +49,19 @@
   padding: 5px;
 }
 
-.elem {
+.keys-btns {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 52px;
-  height: 52px;
+  width: 42px;
+  height: 42px;
   background-color: tomato;
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+}
+
+.keys-btns:hover {
+  opacity: 0.9;
 }
