@@ -1,9 +1,12 @@
-# Calculator
+# Tic Tac Toe
 
-### Created as part of [The Odin Project](https://www.theodinproject.com) Javascript curriculum.
+![calc](https://github.com/ena0berzerk/calculator/assets/110235307/27750082-86a5-42f7-9a15-d177dadef045)
 
-# Preview: [The Odin Project](https://www.theodinproject.com)
+### Preview
+[Tic Tac Toe](https://ena0berzerk.github.io/tic-tac-toe/)
+
 
 ## Description
 
-A simple Calculator. 
+A simple Calculator
+
