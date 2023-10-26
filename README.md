@@ -1,5 +1,9 @@
 # Calculator
 
-Final project at the Foundation in The Odin Project
+### Created as part of [The Odin Project](https://www.theodinproject.com) Javascript curriculum.
 
-Preview: [Calculator](https://ena0berzerk.github.io/calculator/)
+# Preview: [The Odin Project](https://www.theodinproject.com)
+
+## Description
+
+A simple Calculator. 
